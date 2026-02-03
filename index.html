@@ -3,87 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deus Vult</title>
+    <title>Gus Phillips - Data Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>  
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>  
 <body>
 
 <header>
-    <h1>Welcome</h1>
-    <p></p>
+    <h1>🤠 Howdy, I'm Gus Phillips</h1>
+    <p>Professional Data Engineer | Texas-based</p>
 </header>
-<header>
-    <nav>
-        <ul style="list-style: none; padding: 0; text-align: center; background-color: #800000; margin: 0;">
-            <li style="display: inline; margin-right: 20px;">
-                <a href="index.html" style="color: white; text-decoration: none; font-size: 1.2rem;">Home</a>
-            </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="about.html" style="color: white; text-decoration: none; font-size: 1.2rem;">About</a>
-            </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="work.html" style="color: white; text-decoration: none; font-size: 1.2rem;">Work</a>
-            </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="wedding.html" style="color: white; text-decoration: none; font-size: 1.2rem;">Wedding</a>
-            </li>
-            <li style="display: inline; margin-right: 20px;">
-                <a href="https://www.linkedin.com/in/agustus/" style="color: white; text-decoration: none; font-size: 1.2rem;">Contact</a>
-            </li>
-            <li style="display: inline;">
-                <a href="extras.html" style="color: white; text-decoration: none; font-size: 1.2rem;">Extras</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="https://www.linkedin.com/in/agustus/">Contact</a></li>
+    </ul>
+</nav>
+
 <div class="container">
     <section>
-        <h2>Howdy</h2>  
-        <p>I'm Gus Phillips, welcome to my passion project and creative outlet. <br> <br>
-        I'll be posting life updates and projects I've been working on. <br> <br>
-        I think it'll be useful to show proficiency in my work here, and help you to understand my approach to life. <br> <br>
-        If you have any feedback, bugs, or would like to talk: <br> 
-        Please feel free to reach out to me on linkedin, or at my email: pleasetrinket@gmail.com.</p>
+        <h2>Professional Summary</h2>
+        <p>I'm a Data Engineer with expertise in building scalable data solutions and analytics platforms. I hold a Master of Science in Business Analytics from the University of Texas at Dallas and a Bachelor of Science in International Economics from Texas Tech University. I'm passionate about transforming raw data into actionable insights and have been recognized for technical excellence, including winning the Alteryx Hackathon at Northrop Grumman.</p>
     </section>
 
-    <!-- <section>
-        <h2>Professional Experience</h2>
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="competencies-grid">
+            <div class="competency-category">
+                <h3>Languages & Databases</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="competency-category">
+                <h3>Processing & Orchestration</h3>
+                <ul>
+                    <li>Airflow</li>
+                    <li>PySpark</li>
+                </ul>
+            </div>
+            <div class="competency-category">
+                <h3>Analytics & Visualization</h3>
+                <ul>
+                    <li>Tableau</li>
+                    <li>Alteryx</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Data Pipeline Architecture</h2>
+        <div class="mermaid">
+            graph LR
+                A["Data Sources<br/>APIs, DBs, Files"] --> B["Ingestion<br/>Airflow, ETL"]
+                B --> C["Processing<br/>Python, Spark<br/>SQL"]
+                C --> D["Storage<br/>Data Warehouse"]
+                D --> E["Analytics & BI<br/>Tableau, Reports"]
+                E --> F["Insights<br/>Decision Making"]
+                
+                style A fill:#e8dff5
+                style B fill:#e8dff5
+                style C fill:#e8dff5
+                style D fill:#e8dff5
+                style E fill:#e8dff5
+                style F fill:#e8dff5
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Achievements</h2>
         <ul>
-            <li><strong>Sr. Data Engineer</strong> at Northrop Grumman (Aug 2022 - Present)</li>
-            <li><strong>Systems Engineer</strong> at Lockheed Martin Aero (Nov 2019 - Jul 2022)</li>
-            <li><strong>Consultant Intern</strong> at Ethos Business Solutions (Jun 2024 - Aug 2024)</li>
+            <li><strong>Alteryx Hackathon Winner</strong> at Northrop Grumman - Recognized for innovative data blending and automation solutions</li>
+            <li>Experience in enterprise data engineering at Fortune 500 companies (Northrop Grumman, Lockheed Martin)</li>
+            <li>Bilingual professional (English & Spanish, B2 Certification)</li>
         </ul>
     </section>
 
     <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Master of Science</strong> in Business Analytics, University of Texas at Dallas (2022)</li>
-            <li><strong>Bachelor of Science</strong> in International Economics, Texas Tech University (2016)</li>
-        </ul>
+        <h2>Let's Connect</h2>
+        <p>Interested in learning more about my work or discussing data engineering challenges? Reach out on <a href="https://www.linkedin.com/in/agustus/">LinkedIn</a> or email me at gusphillips66@gmail.com.</p>
     </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>SQL, SSIS, Python, PySpark, Spark</li>
-            <li>Tableau, Power BI, Alteryx</li>
-            <li>Fluent in Spanish (B2 Certification)</li>
-        </ul>
-    </section> -->
-
-
 </div>
 
 <footer>
     <p>&copy; 2024 Gus Phillips. All rights reserved.</p>
 </footer>
+
+<script>
+    mermaid.initialize({ startOnLoad: true, theme: 'base' });
+    mermaid.contentLoaded();
+</script>
 
 </body>
 </html>
