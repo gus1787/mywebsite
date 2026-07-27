@@ -1,123 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Gus Phillips is a data engineer building scalable pipelines, finance automation, governed analytics, and production AI workflows.">
-  <meta property="og:title" content="Gus Phillips | Data Engineer">
-  <meta property="og:description" content="Data systems that turn busy work into business value.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gusphillips.com/">
-  <meta property="og:image" content="https://gusphillips.com/og.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://gusphillips.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <title>Gus Phillips | Data Engineer</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gus Phillips - Data Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>  
 <body>
-  <main>
-    <header class="site-header shell">
-      <a class="wordmark" href="#top" aria-label="Gus Phillips, home">GP<span class="wordmark-dot">.</span></a>
-      <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="/Gus-Phillips-Resume.pdf">Résumé</a>
-        <a class="nav-registry" href="/registry/">Registry</a>
-      </nav>
-    </header>
 
-    <section class="hero shell" id="top">
-      <div class="hero-copy">
-        <p class="kicker">Howdy — I’m Gus Phillips.</p>
-        <h1>I build data systems that turn busy work into business value.</h1>
-        <p class="hero-lede">Data engineer specializing in scalable pipelines, finance automation, governed analytics, and production AI workflows.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#experience">See my work</a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/agustus/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+<header>
+    <h1>🤠 Howdy, I'm Gus Phillips</h1>
+    <p>Professional Data Engineer | Texas-based</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="https://www.linkedin.com/in/agustus/">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section>
+        <h2>Professional Summary</h2>
+        <p>I'm a Data Engineer with expertise in building scalable data solutions and analytics platforms. I hold a Master of Science in Business Analytics from the University of Texas at Dallas and a Bachelor of Science in International Economics from Texas Tech University. I'm passionate about transforming raw data into actionable insights and have been recognized for technical excellence, including winning the Alteryx Hackathon at Northrop Grumman.</p>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="competencies-grid">
+            <div class="competency-category">
+                <h3>Languages & Databases</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="competency-category">
+                <h3>Processing & Orchestration</h3>
+                <ul>
+                    <li>Airflow</li>
+                    <li>PySpark</li>
+                </ul>
+            </div>
+            <div class="competency-category">
+                <h3>Analytics & Visualization</h3>
+                <ul>
+                    <li>Tableau</li>
+                    <li>Alteryx</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <aside class="impact-card" aria-label="Recent impact">
-        <p class="impact-label">Recent impact</p>
-        <p class="impact-number">$265K+</p>
-        <p class="impact-copy">in annualized cost savings across six finance automation projects</p>
-        <div class="impact-divider"></div>
-        <div class="impact-secondary"><strong>870+</strong><span>hours of manual work saved each year</span></div>
-      </aside>
     </section>
 
-    <section class="marquee" aria-label="Core skills">
-      <div class="marquee-inner shell"><span>DATA ENGINEERING</span><i>✦</i><span>AI WORKFLOWS</span><i>✦</i><span>ANALYTICS</span><i>✦</i><span>AUTOMATION</span></div>
-    </section>
-
-    <section class="section shell" id="work">
-      <div class="section-heading">
-        <p class="kicker">What I do</p>
-        <h2>From raw data to reliable decisions.</h2>
-        <p>I work where data engineering, automation, and business operations meet.</p>
-      </div>
-      <div class="capability-grid">
-        <article class="capability-card">
-          <span class="card-number">01</span><p class="card-eyebrow">Build</p><h3>Data platforms</h3>
-          <p>Reliable pipelines, governed data models, and analytics foundations that make complex operations easier to understand.</p>
-          <span class="tool-line">Python · SQL · PySpark · Airflow</span>
-        </article>
-        <article class="capability-card">
-          <span class="card-number">02</span><p class="card-eyebrow">Automate</p><h3>AI-enabled workflows</h3>
-          <p>Practical agents and LLM-enabled tooling that remove repetitive work while keeping quality and governance in view.</p>
-          <span class="tool-line">AI agents · RAG · LLM tooling</span>
-        </article>
-        <article class="capability-card">
-          <span class="card-number">03</span><p class="card-eyebrow">Translate</p><h3>Business outcomes</h3>
-          <p>A business analytics background that connects technical decisions to measurable savings, speed, and confidence.</p>
-          <span class="tool-line">Finance · Supply chain · Operations</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section experience-section" id="experience">
-      <div class="shell experience-layout">
-        <div class="section-heading sticky-heading">
-          <p class="kicker">Experience</p><h2>Engineering with context.</h2>
-          <p>More than five years helping Fortune 500 teams move from manual processes to trusted, scalable systems.</p>
-          <a class="text-link" href="/Gus-Phillips-Resume.pdf">Download full résumé <span aria-hidden="true">↓</span></a>
+    <section>
+        <h2>Data Pipeline Architecture</h2>
+        <div class="mermaid">
+            graph LR
+                A["Data Sources<br/>APIs, DBs, Files"] --> B["Ingestion<br/>Airflow, ETL"]
+                B --> C["Processing<br/>Python, Spark<br/>SQL"]
+                C --> D["Storage<br/>Data Warehouse"]
+                D --> E["Analytics & BI<br/>Tableau, Reports"]
+                E --> F["Insights<br/>Decision Making"]
+                
+                style A fill:#e8dff5
+                style B fill:#e8dff5
+                style C fill:#e8dff5
+                style D fill:#e8dff5
+                style E fill:#e8dff5
+                style F fill:#e8dff5
         </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <p class="timeline-date">2025 — Present</p>
-            <div><h3>Data Engineer</h3><p class="timeline-company">Meta · Contractor</p><p>Building finance automation and data pipelines across payroll, tax, accounts receivable, and compliance. Delivered $265K+ in annualized savings across six projects and built production AI agents for documentation and workflow standards.</p></div>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">2022 — 2025</p>
-            <div><h3>Senior Data Engineer</h3><p class="timeline-company">Northrop Grumman</p><p>Engineered governed data flows for Finance, HR, Supply Chain, and Facilities analytics, including a migration of legacy workloads to Databricks for stronger scale, performance, and maintainability.</p></div>
-          </article>
-          <article class="timeline-item">
-            <p class="timeline-date">2019 — 2022</p>
-            <div><h3>Systems Engineer</h3><p class="timeline-company">Lockheed Martin · F-35 Operations</p><p>Built Python and SQL automation for logistics data, introduced validation and monitoring, and supported operational reporting for supply chain and readiness teams.</p></div>
-          </article>
-        </div>
-      </div>
     </section>
 
-    <section class="education shell">
-      <p class="kicker">Education</p>
-      <div class="education-grid">
-        <div><strong>M.S. Business Analytics</strong><span>University of Texas at Dallas · 2022</span></div>
-        <div><strong>B.S. International Economics</strong><span>Texas Tech University · 2016</span></div>
-      </div>
+    <section>
+        <h2>Key Achievements</h2>
+        <ul>
+            <li><strong>Alteryx Hackathon Winner</strong> at Northrop Grumman - Recognized for innovative data blending and automation solutions</li>
+            <li>Experience in enterprise data engineering at Fortune 500 companies (Northrop Grumman, Lockheed Martin)</li>
+            <li>Bilingual professional (English & Spanish, B2 Certification)</li>
+        </ul>
     </section>
 
-    <section class="contact-section shell">
-      <p class="kicker">Let’s connect</p><h2>Have a data challenge worth solving?</h2>
-      <div class="contact-links">
-        <a href="mailto:gusphillips66@gmail.com">gusphillips66@gmail.com <span aria-hidden="true">↗</span></a>
-        <a href="https://www.linkedin.com/in/agustus/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-      </div>
+    <section>
+        <h2>Let's Connect</h2>
+        <p>Interested in learning more about my work or discussing data engineering challenges? Reach out on <a href="https://www.linkedin.com/in/agustus/">LinkedIn</a> or email me at gusphillips66@gmail.com.</p>
     </section>
+</div>
 
-    <footer><div class="shell footer-inner"><p>Gus Phillips</p><p>Data engineering · AI workflows · Texas</p><p>© 2026</p></div></footer>
-  </main>
+<footer>
+    <p>&copy; 2024 Gus Phillips. All rights reserved.</p>
+</footer>
+
+<script>
+    mermaid.initialize({ startOnLoad: true, theme: 'base' });
+    mermaid.contentLoaded();
+</script>
+
 </body>
 </html>
+
+
+
