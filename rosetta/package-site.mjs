@@ -12,6 +12,7 @@ const reelDist = resolve(process.env.ROSETTA_REEL_DIST || '/Users/gusphillips/Do
 const petWebsite = resolve(process.env.ROSETTA_PET_WEBSITE || '/Users/gusphillips/Documents/ChatGPT/Test Project/website/pet-portrait');
 const petFiles = ['index.html', 'app.css', 'app.js', 'config.js'];
 const petLegalFiles = ['legal.css', 'privacy/index.html', 'support/index.html'];
+const rollbackDeploymentId = process.env.ROSETTA_ROLLBACK_DEPLOYMENT_ID || '1ec62523-1da3-42e0-bb52-43c827583714';
 const excluded = /^(?:CNAME|.*\.(?:md|markdown|docx|env|pem|key|p12|pfx|tfstate))$/i;
 const forbiddenName = /(?:secret|credential|password|token|private[_-]?key)/i;
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -44,6 +45,6 @@ const petSha = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: resolve(petWebs
 const petDirty = execFileSync('git', ['status', '--porcelain'], { cwd: resolve(petWebsite, '..', '..') }).toString().trim().length > 0;
 const sourceDirty = execFileSync('git', ['status', '--porcelain'], { cwd: root }).toString().trim().length > 0;
 const reelDirty = execFileSync('git', ['status', '--porcelain'], { cwd: resolve(reelDist, '..') }).toString().trim().length > 0;
-const manifest = { schema: 1, product: 'rosetta', sourceRepository: 'gus1787/mywebsite', sourceSha, sourceDirty, reelRecallSource: reelSha, reelRecallSourceDirty: reelDirty, petPortraitSource: petSha, petPortraitSourceDirty: petDirty, petPortraitAllowlist: [...petFiles, ...petLegalFiles].map((file) => `pet-portrait/${file}`), wrangler: '4.129.0', rollbackDeploymentId: '473a7b39-07de-4c6b-9913-b37e020c38eb', files };
+const manifest = { schema: 1, product: 'rosetta', sourceRepository: 'gus1787/mywebsite', sourceSha, sourceDirty, reelRecallSource: reelSha, reelRecallSourceDirty: reelDirty, petPortraitSource: petSha, petPortraitSourceDirty: petDirty, petPortraitAllowlist: [...petFiles, ...petLegalFiles].map((file) => `pet-portrait/${file}`), wrangler: '4.129.0', rollbackDeploymentId, files };
 await writeFile(join(out, 'rosetta-manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
 console.log(`Packaged ${files.length + 1} files into ${out}`);

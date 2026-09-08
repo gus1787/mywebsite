@@ -14,7 +14,7 @@ try { await run(process.execPath, [join(root, 'rosetta/package-site.mjs'), `--ou
   await readFile(join(out, 'reel-recall/auth/finish/index.html'));
   if (redirects.includes(' 200')) throw new Error('invalid Pages rewrite remains');
   if (!(await readFile(join(out, '_headers'), 'utf8')).includes('/pet-portrait/config.js')) throw new Error('Pet scoped headers missing');
-  if (manifest.wrangler !== '4.129.0' || !manifest.sourceSha || !manifest.reelRecallSource || manifest.files.length < 10) throw new Error('manifest is incomplete');
+  if (manifest.wrangler !== '4.129.0' || !manifest.sourceSha || !manifest.reelRecallSource || !/^[0-9a-f-]{36}$/.test(manifest.rollbackDeploymentId) || manifest.files.length < 10) throw new Error('manifest is incomplete');
   if (manifest.files.some(({ path }) => path === 'CNAME' || path.endsWith('.docx') || path.startsWith('.') || path.startsWith('rosetta/'))) throw new Error('forbidden files leaked into package');
   for (const preserved of ['pet-portrait/index.html', 'retention/index.html', 'registry/index.html']) await readFile(join(out, preserved)); console.log('rosetta package test passed');
   const petFiles = await (await import('node:fs/promises')).readdir(join(out, 'pet-portrait')); if (petFiles.sort().join(',') !== 'app.css,app.js,config.js,index.html,legal.css,privacy,support') throw new Error('Pet Portrait copied files exceed allowlist');
