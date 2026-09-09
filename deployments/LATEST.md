@@ -11,7 +11,7 @@
 - Rollback production deployment ID: `1ec62523-1da3-42e0-bb52-43c827583714`
 - Packaging evidence: clean immutable Reel Recall and Pet Portrait worktrees, manifest source-dirty flags false, and `rosetta package test passed`
 - HTTP evidence: `/pet-portrait/`, privacy/support routes, `/reel-recall/`, and `/reel-recall/rush/` returned HTTP 200
-- Browser evidence: pending because the local Mac was locked when browser automation was attempted; production (`MASTER`) was not changed
+- Browser evidence: passed on the deployed preview — Pet Portrait root, privacy, and support routes plus Reel Recall `/reel-recall/rush/` direct route loaded with expected content and zero console errors; production (`MASTER`) was not changed
 
 ## Previous preview
 
